@@ -54,11 +54,13 @@ carousel:
 widgets:
   - search
   - notification
-  - social
+  - calendar
   - category
   - archive
   - tagcloud
+  - social
   - friends
+
 
 ## 搜索
 jsonContent:
@@ -260,9 +262,16 @@ baidu_push: false
 ### Online contact,DaoVoice
 daovoice: true
 daovoice_app_id: 10b503a1
-
+## 音乐播放器
 aplayer:
   meting: true
+## 日历云
+# Calendar
+calendar:
+  language: zh-CN
+  single: true
+  root: /
+
 
 #网站主题配置
 since: 2019
