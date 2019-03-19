@@ -8,18 +8,34 @@ menu:
 - page: home
   url: /
   icon:
-- page: 前端
-  url: /categories/前端/
-  icon:
 - page: 后端
-  url: /categories/后端/
+  url: /categories/Java/
+  icon: 
+- page: 分布式
+  url: https://www.baidu.com
   icon:
-- page: 工具
-  url: /categories/工具/
+- page: 数据库
+  url: https://www.baidu.com
+  icon:
+- page: 前端
+  url: /categories/JavaScript/
+  icon:
+- page: 运维
+  url: /categories/Linux
   icon:
 - page: 时间轴
   url: /archives/
   icon:
+- page: 自媒体
+  url: http://i.youku.com/yeamin?spm=a2hzp.8244740.0.0
+  icon:
+- page: 杂谈
+  url: https://www.baidu.com
+  icon:
+- page: 关于
+  url: /about
+  icon: /favicon.ico
+
 
 ## favicon
 favicon: /favicon.ico
@@ -44,7 +60,6 @@ widgets:
   - tagcloud
   - friends
 
-
 ## 搜索
 jsonContent:
   searchLocal: true
@@ -68,19 +83,16 @@ notification: |-
 social:
  - name: Github
    icon: git
-   href: //github.com/shenliyang
+   href: https://github.com/ltyeamin
  - name: 邮箱
    icon: envelope-o
-   href: mailto:snippet@91h5.cc
+   href: mailto:ltyeamin@gmail.com
  - name: 联系QQ
    icon: qq
-   href: /
+   href: tencent://message/?uin=1301015490&Site=&Menu=yes
  - name: 微信
    icon: weixin
-   href: /
- - name: QQ群
-   icon: users
-   href: /
+   href: /about/myweixin.jpg
  - name: RSS
    icon: feed
    href: /atom.xml
@@ -99,15 +111,15 @@ arch_config:
 
 ## 标签云设置
 tagcloud:
-  tag3d: false
-  textColour: '#444'
+  tag3d: true
+  textColour: '#FFA500'
   outlineMethod: 'block'
-  outlineColour: '#FFDAB9'
+  outlineColour: '  #FDF5E6'
   interval: 30
   freezeActive: true
   frontSelect: true
   reverse: true
-  wheelZoom: false
+  wheelZoom: true
 
 ## 友链设置
 links:
@@ -128,53 +140,53 @@ homePanel: true
 
 ## 缩略图自定义随机图片
 defaultImgs:
-  -
+  - http://lorempixel.com/538/300/
 
 ## 截取文章首页描述字数
-excerptLength: 120
+excerptLength: 150
 
 ## 是否开启文章目录
 toc: true
 
 ## 代码高亮配置
-highlightTheme:
+highlightTheme: default
 
 ## bootstrap配置
 bootstrap:
 
 ## ICON配置
-fontAwesome:
+fontAwesome: //cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css
 
 ## 文章过期提醒功能
 warning:
   days: 300
-  text: '本文于%d天之前发表，文中内容可能已经过时。'
+  text: '本文于%d天之前发表，文中内容可能已经过时'
 
 ## 文章内声明
 declaration:
   enable: true
   title: '转载声明'
   tip: |-
-      商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="" target="_blank">Snippet</a>
+      商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="" target="_blank">彤哥哥</a>
 
 ## 文章打赏
 reward:
-  alipay: ''
-  wepay: ''
-  tip: 赞赏是不耍流氓的鼓励
+  alipay: '/about/alipay.png'
+  wepay: '/about/weixin.png'
+  tip: 请作者喝杯咖啡吧
 
 ## 主题评论
 
 ## Valine评论
 valine:
    enable: true
-   appId: xOKV9J4UeQAtVkvnJC7Kq2Jn-gzGzoHsz
-   appKey: erIpQac4azoCmgfBB7Dl9maa
+   appId: wA3iNQOiAuhrRJkNgIjirA8f-gzGzoHsz
+   appKey: iGL0JyEnJQ8HIMlLd4Sm0oOp
    placeholder: 说点什么吧
    notify: false
    verify: false
    avatar: mm
-   meta: nick,mail
+   meta: nick,mail,link
    pageSize: 10
   
 ### 畅言评论(需要ICP备案)
@@ -202,7 +214,7 @@ gitalk:
 ### Disqus评论
 disqus:
   enable: false
-  shortname: snippet
+  shortname: 彤哥哥
   count: false
 
 ### gitment评论(长期不更新，不建议使用)
@@ -222,16 +234,16 @@ uyan:
 
 ## 网站访客统计
 visit_counter:
-   site: false
-   page: false
+   site: true
+   page: true
 
 ## 网站访问统计分析
 
-### 网盟CNZZ统计
-cnzz_analytics: 1263868967
+### 网盟CNZZ统计 1276467744
+cnzz_analytics: 
 
 ### 百度统计
-baidu_analytics:
+baidu_analytics: ebfd000c0e7cc1ee84a00f01d419b1e2
 
 ### 谷歌统计
 google_analytics:
@@ -245,7 +257,14 @@ baidu_site_verification:
 ### 百度自动推送
 baidu_push: false
 
+### Online contact,DaoVoice
+daovoice: true
+daovoice_app_id: 10b503a1
+
+aplayer:
+  meting: true
+
 #网站主题配置
-since: 2017
+since: 2019
 robot: 'all' ### 控制搜索引擎的抓取和索引编制行为，默认为all
 version: 1.2.1
