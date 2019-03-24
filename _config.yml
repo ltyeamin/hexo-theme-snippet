@@ -114,7 +114,7 @@ arch_config:
 ## 标签云设置
 tagcloud:
   tag3d: true
-  textColour: '#FFA500'
+  textColour: '#e67e22'
   outlineMethod: 'block'
   outlineColour: '  #FDF5E6'
   interval: 30
@@ -125,7 +125,14 @@ tagcloud:
 
 ## 友链设置
 links:
-  - Hexo官网: https://hexo.io/zh-cn/
+  - 程序猿DD: http://blog.didispace.com
+  - 周立的博客: http://www.itmuch.com
+  - 纯洁的微笑: http://www.ityouknow.com
+  - crossoverjie's Blog: https://crossoverjie.top
+  - 阿里中间件技术博客: http://jm.taobao.org
+  - 美团技术团队: https://tech.meituan.com
+  - 网易乐得技术博客: http://tech.lede.com
+  - 随行付研究院: https://open.vbill.cn
 
 
 # 主题自定义个性化配置
