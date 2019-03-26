@@ -9,22 +9,22 @@ menu:
   url: /
   icon:
 - page: 后端
-  url: /categories/Java/
+  url: /categories/backend/
   icon: 
-- page: 分布式
-  url: https://www.baidu.com
-  icon:
-- page: 数据库
-  url: https://www.baidu.com
-  icon:
 - page: 前端
-  url: /categories/JavaScript/
+  url: /categories/frontend/
   icon:
 - page: 运维
-  url: /categories/Linux
+  url: /categories/ops/
   icon:
-- page: 时间轴
-  url: /archives/
+- page: 数据库
+  url: /categories/database/
+  icon:
+- page: 算法
+  url: /categories/algorithm/
+  icon:
+- page: 项目管理
+  url: /categories/pm/
   icon:
 - page: 自媒体
   url: http://i.youku.com/yeamin?spm=a2hzp.8244740.0.0
@@ -55,8 +55,8 @@ widgets:
   - search
   - notification
   - calendar
-  - category
-  - archive
+  # - category
+  # - archive
   - tagcloud
   - social
   - friends
@@ -77,7 +77,7 @@ jsonContent:
 notification: |-
             <p>
                 主题下载：<a href="https://github.com/ltyeamin/hexo-theme-snippet" title="fork me" target="_blank">Snippet主题</a> <br/>
-                主题使用：<a href="https://github.com/ltyeamin/hexo-theme-snippet/master/README.md#常见问题" title="" target="_blank">常见使用问题</a> <br/>
+                主题使用：<a href="https://github.com/ltyeamin/hexo-theme-snippet" title="" target="_blank">常见使用问题</a> <br/>
                 支持主题：<a href="https://github.com/ltyeamin/hexo-theme-snippet/stargazers">Star一下</a>
             </p>
 
