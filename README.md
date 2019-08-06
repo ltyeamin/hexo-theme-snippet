@@ -323,11 +323,15 @@ gitalk:
    enable: false
    clientID: "" // Github 应用ID
    clientSecret: "" // Github 应用密钥
-   repo: "hexo-theme-snippet" // 存储你评论 issue 的 Github 仓库名（建议直接用 GitHub Page 的仓库名），注：只写仓库名称，不写完整地址，比如：hexo-theme-snippet, 而不是 https://github.com/shenliyang/hexo-theme-snippet
-   owner: shenliyang  // Github 用户名(github登录时用的名称)
-   admin: shenliyang // 这个仓库的管理员，可以有多个，用数组表示，一般写自己用户名即可
-   perPage: 10 //每次加载的数据大小，最多100
-   id: "" // 如果为值"location.pathname"不建议填写(除非你有更好的方式)，由于id字段限制长度为50字符，默认为空时主题会进行判断处理。
+   repo: shenliyang.github.io // Github仓库地址
+   owner: shenliyang  // Github 用户名(Github仓库拥有者)
+   admin: shenliyang // GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)可以有一个或多个，如果有多名可使用，例如：admin: admin1,admin2 配置
+   perPage: 10 // 每次加载的数据大小，最多100
+   distractionFreeMode: true // 是否启用无干扰模式，类似Facebook评论框的全屏遮罩效果
+
+   // 以下参数主题会默认处理，不需要配置
+   language // 语言类型，默认为站点配置中选项
+   id // 页面的唯一标识, 已使用md5对pathname转换生成唯一id处理
 
 ## 网站访客统计 [不蒜子统计](http://busuanzi.ibruce.info/)
 visit_counter:
@@ -417,6 +421,10 @@ notifications: #启用通知
     on_failure: always #部署失败时，同上
 
 # S: Build Lifecycle
+
+before_install:
+  - sudo apt-get install libnotify-bin #支持linux桌面提醒库
+
 install:
   - npm install  #安装依赖
 
@@ -465,15 +473,17 @@ hexo clean && hexo g && hexo s -p 4000
 ## 感谢
 在设计这款主题的时候参考了好多主题和博客的设计和创意，深表感谢！
 
-## 贡献
-接受各种形式的贡献，包括但不限于提交问题或需求，修复代码。
-欢迎大家提Issue或者Pull Request。
+## 鼓励
+**如果觉得本主题还不错，您的支持和鼓励才是后续更新最大的动力，== 欢迎  [Star](https://github.com/shenliyang/hexo-theme-snippet/stargazers)下 ==**
 
-如果觉得本主题还不错，== 欢迎  [Star](https://github.com/shenliyang/hexo-theme-snippet/stargazers)下 ==，您的支持和鼓励才是后续更新最大的动力
-
+![Stargazers over time](https://starchart.cc/shenliyang/hexo-theme-snippet.svg)
 
 ## 宗旨
 主题宗旨：**致力主题简洁轻量，配置方便开箱即用**，该主题项目会持续维护和更新，不会跑路，请放心使用。
+
+## 贡献
+接受各种形式的贡献，包括但不限于提交问题或需求，修复代码。
+欢迎大家提Issue或者Pull Request。
 
 > Hexo框架追求的是快速、简洁，高效。喜欢绚丽，添加各种功能，折腾的朋友，建议移步至：[wordpress官网](https://cn.wordpress.org/)
 
@@ -544,13 +554,17 @@ categories:
 
 Hexo官方文档: [分类方法的分歧](https://hexo.io/zh-cn/docs/front-matter#分类和标签)
 
-> 没有找到你需要的问题解决方案，建议阅读[《你不知道的提Issues技巧》](https://github.com/shenliyang/hexo-theme-snippet#你不知道的提Issues技巧) 再提Issues。  
+> 没有找到你需要的问题解决方案，建议阅读[《你不知道的提Issues技巧》](https://github.com/shenliyang/hexo-theme-snippet#你不知道的提Issues技巧) 再提Issues。
 
 
 ## 版本更新日志
 
   - 增加Gitalk评论系统
   - 增加博客自动化部署结果实时推送到手机钉钉上，第一时间了解部署情况
+
+  自动化部署结果通知示例：
+
+  ![自动化部署结果通知示例](https://s2.ax1x.com/2019/03/06/kvnejs.jpg)
 
 ## License
 
