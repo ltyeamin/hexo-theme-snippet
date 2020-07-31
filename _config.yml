@@ -46,7 +46,7 @@ rss: /atom.xml
 ## Carousel
 carousel:
   img: './img/head-img.jpg'
-  url: 'javascript:'
+  url: 'https://promotion.aliyun.com/ntms/act/qwbk.html?userCode=xs0pypd2'
 
 # 各个小工具的设置
 
@@ -197,11 +197,11 @@ valine:
    appKey: iGL0JyEnJQ8HIMlLd4Sm0oOp
    placeholder: 说点什么吧
    notify: false
-   verify: false
+   verify: true
    avatar: mm
    meta: nick,mail,link
    pageSize: 10
-  
+
 ### 畅言评论(需要ICP备案)
 changyan:
   enable: false
@@ -216,13 +216,13 @@ livere:
 ## Gitalk评论
 gitalk:
    enable: false
-   clientID: 
-   clientSecret: 
-   repo: 
-   owner: 
-   admin: 
+   clientID:
+   clientSecret:
+   repo:
+   owner:
+   admin:
    perPage:
-   id:
+   distractionFreeMode: true
 
 ### Disqus评论
 disqus:
@@ -287,4 +287,4 @@ calendar:
 #网站主题配置
 since: 2020
 robot: 'all' ### 控制搜索引擎的抓取和索引编制行为，默认为all
-version: 1.2.1
+version: 1.2.3
