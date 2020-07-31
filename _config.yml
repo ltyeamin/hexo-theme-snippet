@@ -27,10 +27,10 @@ menu:
   url: /categories/pm/
   icon:
 - page: 自媒体
-  url: http://i.youku.com/yeamin?spm=a2hzp.8244740.0.0
+  url: 
   icon:
-- page: 杂谈
-  url: https://www.baidu.com
+- page: 生活
+  url: /categories/others/
   icon:
 - page: 关于
   url: /about
@@ -129,8 +129,12 @@ links:
   - 周立的博客: http://www.itmuch.com
   - 纯洁的微笑: http://www.ityouknow.com
   - crossoverjie's Blog: https://crossoverjie.top
+  - cmsblogs: http://cmsblogs.com
+  - 东哥哥9527: http://www.cdd9527.cn
+  - 龙娅婷的Blog: http://longyating.com
+  - 小蒋的Blog: https://lubin_jiang.gitee.io/hexo
   - 阿里中间件技术博客: http://jm.taobao.org
-  - 美团技术团队: https://tech.meituan.com
+  - 美团点评技术团队博客: https://tech.meituan.com
   - 网易乐得技术博客: http://tech.lede.com
   - 随行付研究院: https://open.vbill.cn
 
@@ -281,6 +285,6 @@ calendar:
 
 
 #网站主题配置
-since: 2019
+since: 2020
 robot: 'all' ### 控制搜索引擎的抓取和索引编制行为，默认为all
 version: 1.2.1
